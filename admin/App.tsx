@@ -1,13 +1,17 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import Hello from "./components/Hello";
+import HomeRoutes from "./routes/HomeRoutes";
+import Nav from "./routes/Nav";
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <h1>Hello from REACT app</h1>
-      <Hello name="Maratib" />
-    </div>
+    <BrowserRouter basename="/admin">
+      <div>
+        <Hello name="Home" />
+        <Nav />
+        <HomeRoutes />
+      </div>
+    </BrowserRouter>
   );
 }
-
-export default App;
