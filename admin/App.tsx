@@ -10,6 +10,7 @@ export default function App() {
       <div>
         <Hello name="Home" />
         <Nav />
+        <h1>Test</h1>
         <HomeRoutes />
       </div>
     </BrowserRouter>
